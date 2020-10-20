@@ -48,7 +48,7 @@ function newtonroot2(f; iv = 0.5, tol = 1E-7, maxiter = 1000)
     D(f) = x -> ForwardDiff.derivative(f,x)
     g = D(f)
 
-    sol = newtonroot(f, g; iv)
+    sol = newtonroot(f, g)
 
     return sol
 end
@@ -56,9 +56,6 @@ end
 
 
 export newtonroot2
-
-
-
 
 
 end
