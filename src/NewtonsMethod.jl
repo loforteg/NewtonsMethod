@@ -1,12 +1,12 @@
 module NewtonsMethod
 
-greet() = print("Hello! This function computes the Newton's Method; starting value is 0.5.")
+greet() = print("Hello! This function computes the Newton's Method; starting value is 0.3.")
 
 
 using LinearAlgebra, ForwardDiff
 
 # Function using f'
-function newtonroot(f, g; iv = 0.5, tol = 1E-7, maxiter = 1000)
+function newtonroot(f, g; iv = 0.3, tol = 1E-7, maxiter = 1000)
 
     x_old = iv
     normdiff = Inf
@@ -36,10 +36,8 @@ function newtonroot(f, g; iv = 0.5, tol = 1E-7, maxiter = 1000)
 end
 
 
-
-
 # Function using ForwardDiff
-function newtonroot2(f; iv = 0.5, tol = 1E-7, maxiter = 1000)
+function newtonroot(f; iv = 0.3, tol = 1E-7, maxiter = 1000)
 
     x_old = iv
     normdiff = Inf
@@ -55,7 +53,7 @@ end
 
 
 
-export newtonroot2
+export newtonroot
 
 
 end
