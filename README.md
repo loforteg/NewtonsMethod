@@ -27,3 +27,9 @@ where
 - `iv::Float64` initial value (`iv = 0.3` is the default);
 - `tol::Float64` tolerance value (`tol = 1E-7` is the default);
 - `maxiter::Int64` maximum number of iterations (`maxiter = 1000` is the default).
+
+
+
+----
+In the test section, you can see that I have broken a test on purpose in order to see what the Travis CI reports.
+It is now commented in order to have a nicely tested package.
