@@ -13,19 +13,19 @@ The first method uses a fed-in first derivative, while the second one automatica
 The documentation of the package is:
 1.  For the first method:
 ``` julia
-newtonroot(f, df; iv = 0.3, tol = 1E-7, maxiter = 1000)
+newtonroot(f, df; iv = 0.3, tol = 1E-16, maxiter = 1000)
 ```
 
 2. For the second method:
 ``` julia
-newtonroot(f; iv = 0.3, tol = 1E-7, maxiter = 1000)
+newtonroot(f; iv = 0.3, tol = 1E-16, maxiter = 1000)
 ```
 
 where
 - `f(x)::Function` function whose root needs to be found;
 - `df(x)::Function` first derivative of the function;
 - `iv::Float64` initial value (`iv = 0.3` is the default);
-- `tol::Float64` tolerance value (`tol = 1E-7` is the default);
+- `tol::Float64` tolerance value (`tol = 1E-16` is the default);
 - `maxiter::Int64` maximum number of iterations (`maxiter = 1000` is the default).
 
 
