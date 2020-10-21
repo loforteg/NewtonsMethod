@@ -6,7 +6,7 @@ greet() = print("Hello! This function computes the Newton's Method; starting val
 using LinearAlgebra, ForwardDiff
 
 # Function using f'
-function newtonroot(f, g; iv = 0.3, tol = 1E-7, maxiter = 1000)
+function newtonroot(f, g; iv = 0.3, tol = 1E-16, maxiter = 1000)
 
     x_old = iv
     normdiff = Inf
@@ -37,7 +37,7 @@ end
 
 
 # Function using ForwardDiff
-function newtonroot(f; iv = 0.3, tol = 1E-7, maxiter = 1000)
+function newtonroot(f; iv = 0.3, tol = 1E-16, maxiter = 1000)
 
     x_old = iv
     normdiff = Inf
