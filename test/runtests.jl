@@ -27,7 +27,7 @@ using Test
 
     # 3. Test using BigFloat precision instead of Float
     f(x) = (x - 1)^3
-    df = 3*(x - 1)^2
+    df(x) = 3*(x - 1)^2
 
     @test BigFloat(NewtonsMethod.newtonroot(f, df)) ≈ 1.0
     @test BigFloat(NewtonsMethod.newtonroot(f)) ≈ 1.0
