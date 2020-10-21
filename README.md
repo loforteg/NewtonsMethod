@@ -22,8 +22,8 @@ newtonroot(f; iv = 0.3, tol = 1E-7, maxiter = 1000)
 ```
 
 where
-- `f(x) :: Function` function whose root needs to be found;
-- `df(x) :: Function` first derivative of the function;
-- `iv :: Float64` initial value (`iv = 0.3` is the default);
-- `tol :: Float64` tolerance value (`tol = 1E-7` is the default);
-- `maxiter :: Int64` maximum number of iterations (`maxiter = 1000` is the default).
+- `f(x)::Function` function whose root needs to be found;
+- `df(x)::Function` first derivative of the function;
+- `iv::Float64` initial value (`iv = 0.3` is the default);
+- `tol::Float64` tolerance value (`tol = 1E-7` is the default);
+- `maxiter::Int64` maximum number of iterations (`maxiter = 1000` is the default).
