@@ -13,12 +13,12 @@ The first method uses a fed-in first derivative, while the second one automatica
 The documentation of the package is:
 1.  For the first method:
 ``` julia
-newtonroot(f, df; iv = 0.3, tol = 1E-16, maxiter = 1000)
+newtonroot(f, df; iv = 0.3, tol = 1E-13, maxiter = 1000)
 ```
 
 2. For the second method:
 ``` julia
-newtonroot(f; iv = 0.3, tol = 1E-16, maxiter = 1000)
+newtonroot(f; iv = 0.3, tol = 1E-13, maxiter = 1000)
 ```
 
 where
