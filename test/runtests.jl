@@ -72,11 +72,11 @@ using Test
 
 
     # 8. Break a test
-    f(X) = (x - 1)^3
-    df(x) = 3*(x - 1)^2
+    # f(X) = (x - 1)^3
+    # df(x) = 3*(x - 1)^2
 
-    @test NewtonsMethod.newtonroot(f, df) ≈ 0.2
-    @test NewtonsMethod.newtonroot(f) ≈ 0.2
+    # @test NewtonsMethod.newtonroot(f, df) ≈ 0.2
+    # @test NewtonsMethod.newtonroot(f) ≈ 0.2
 
 
 end
