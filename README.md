@@ -32,4 +32,5 @@ where
 
 ----
 In the test section, you can see that I have broken a test on purpose in order to see what the Travis CI reports.
-It is now commented in order to have a nicely tested package.
+Evidence of the error has been screenshotted and it is now accessible in the file Evidence-error-PS5.png.
+That test is now commented in order to have a nicely tested package.
